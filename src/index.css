@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+.card{
+  border: 1px solid rgb(182, 182, 182, 0.1);
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgb(153, 153, 153);
+  padding: 20px;
+  margin: 10px;
+  text-align: left;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+  margin-left: 35%;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+  backdrop-filter: blur(10px);
+  border-radius: 10px;  
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), 0 3px 6px rgba(0, 0, 0, 0.12);
+}
+ .album_art{
+  width: 250px;
+  border-radius: 4%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.track_name{
+  font-family: 'Roboto', sans-serif;
+  display: flex ;
+  margin-right: 120px;
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+.track_buttons{
+  display: flex;
+  flex-direction: row;
+}
+.play,.next,.previous{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.prev_butt, .play_butt{
+  width: 22px;
+  height: auto;
+}
+.next_butt{
+  width: 22px;
+  height: auto;
+  transform: scaleX(-1);
+}
+button {
+  background-color: transparent;
+  border: none;
+}
+button:active img {
+  opacity: 0.6;
+  transition: opacity 0.1s ease; 
+}
